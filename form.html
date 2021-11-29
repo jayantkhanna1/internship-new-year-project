@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="form">
+        <div id="name">Jayant Khanna</div>
+        <img id="wish" src="images/wish.png" alt="error">
+        <div class="typewriter">
+            <h1 id="time"><span id="days"></span>Days, <span id="hours"></span> Hours, <span id="mins"></span> Minutes, <span id="secs"></span> Seconds,<span style="background-color:white;color: green;">Before</span></h1>
+        </div>
+        <img src="images/newyear.png" alt="error" id="newyear">
+        <img src="images/2021.png" alt="error" id="year_num">
+        <img src="images/2020under1.png" alt="error" id="children">
+        <div class="wishMessage" style="text-shadow: 1px 1px 3px silver, 1px 1px 3px silver, -1px -1px 3px silver, -1px -1px 3px silver;">
+            <p class="text" style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#ff9933">
+            May Light always surround you,</p>
+            <p class="text" style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:pink">Hope kindle and rebound you,</p>
+            <p class="text" style="text-shadow: 1px 1px 3px black, 1px 1px 3px black, -1px -1px 3px black, -1px -1px 3px black;color:#00ffbf;margin:auto;">Hope kindle and rebound you,</p>
+            <p class="text" style="text-shadow: 1px 1px 3px orange, 1px 1px 3px orange, -1px -1px 3px orange, -1px -1px 3px orange;color:#8B008B">Hope kindle and rebound you
+            </p>
+            <p class="text" style="text-shadow: 1px 1px 3px #ff0037, 1px 1px 3px #ff0037, -1px -1px 3px #ff0037, -1px -1px 3px #ff0037;color: #FFC107;">
+            !! Happy New Year !! </p> </div>
+    </div>
+    <script>
+        var countDownDate=new Date("Jan 1, 2022 00:00:00").getTime(),x=setInterval(
+            function()
+            {
+                var e=(new Date).getTime(),
+                o=countDownDate-e,
+                t=Math.floor(o/864e5),
+                n=Math.floor(o%864e5/36e5),
+                a=Math.floor(o%36e5/6e4),
+                l=Math.floor(o%6e4/1e3);
+                document.getElementById("days").innerHTML=t;
+                document.getElementById("hours").innerHTML=n;
+                document.getElementById("secs").innerHTML=l;
+                document.getElementById("mins").innerHTML=a;
+        },
+        1e3);
+    </script>
+</body>
+</html>
